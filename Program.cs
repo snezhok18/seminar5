@@ -6,7 +6,7 @@
 
 // int[] rnd = GetArr(15);
 
-// Console.WriteLine($"{String.Join(" ~ ", rnd)}");
+//                                                 // Console.WriteLine($"{String.Join(" ~ ", rnd)}");
 
 // int count = 0;
 // for (int i = 0; i < rnd.Length; i++)
@@ -16,7 +16,7 @@
 //         count += 1;
 //     }
 // }
-// Console.WriteLine($"В массиве {count} чётных цифр(ы).");
+// Console.WriteLine($"[{String.Join(", ", rnd)}] -> {count} четных чисел в массиве.");
 
 //         int[] GetArr(int size)
 //         {
@@ -42,7 +42,7 @@ for (int i = 1; i < rnd.Length; i += 2)
 {
         sum += rnd[i];
 }
-Console.WriteLine($"[{String.Join(", ", rnd)}] -> {sum}");
+Console.WriteLine($"[{String.Join(", ", rnd)}] -> {sum} сумма нечетных элементов массива.");
 
 int[] arr(int size)
 {   int[] rnd = new int[size];
